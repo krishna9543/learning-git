@@ -1,0 +1,5 @@
+what is javascript?
+    it is a programming language.
+    its used to make webpage dynamic.
+    its also a scripying language.
+    till 2009 it is used for making webpage presentation.
