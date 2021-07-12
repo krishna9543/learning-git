@@ -174,3 +174,7 @@
 //   },
 // };
 // course.fullDetails();
+
+// 1.this in normal function within a object it's current object
+
+// 2.sorry sir...... "this" in "function expression" we use constructor "this" is current object
