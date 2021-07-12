@@ -178,3 +178,23 @@
 // 1.this in normal function within a object it's current object
 
 // 2.sorry sir...... "this" in "function expression" we use constructor "this" is current object
+// //==========callback function========
+
+// let js10AM = function (name) {
+//   console.log(`hello`, name);
+// };
+// let mongo10AM = function (name) {
+//   console.log(`hello`, name);
+// };
+// function java8AM() {
+//   console.log(`this function`);
+//   return js10AM("shashi sir"), mongo10AM("mani sir");
+// }
+// java8AM(js10AM("shashi sir"), mongo10AM("mani sir"));
+
+// ==========setTimeOut=======
+setTimeout(function () {
+  console.log("i am fun");
+}, 5000);
+let x = "shashi";
+console.log(x);
