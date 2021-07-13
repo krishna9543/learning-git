@@ -41,20 +41,14 @@
 // }
 // console.log(addNumber());
 
-// function course(a1, a2, a3, a4, a5, a6) {
-//   return [a1, a2, a3, a4, a5, a6, arguments];
-// }
-// course("JAVA", "Javascript", "NodeJS", "php", "Python");
-// console.log(
-//   course(
-//     "JAVA",
-//     "Javascript",
-//     "NodeJS",
-//     "php",
-//     "Python",
-//     Array(100).fill("krishna")
-//   )
-// ); //only available on normal function.
+function course(a1, a2, a3, a4, a5, a6) {
+  return [arguments];
+}
+console.log(course("JAVA", "Javascript", "NodeJS", "php", "Python"));
+console.log(course("JAVA", "Javascript", "NodeJS", "php", "Python"));
+var args = Array.prototype.slice.call(arguments);
+console.log(args(0, 1));
+//only available on normal function.
 
 // //arrow function ES6 most used feature
 // let x = () => (i = { name: "krishna", age: 23 });
@@ -193,8 +187,34 @@
 // java8AM(js10AM("shashi sir"), mongo10AM("mani sir"));
 
 // ==========setTimeOut=======
-setTimeout(function () {
-  console.log("i am fun");
-}, 5000);
-let x = "shashi";
-console.log(x);
+// setTimeout(function () {
+//   console.log("i am fun");}, 5000);
+// let x = "shashi";
+// console.log(x);
+
+// function OuterFunction() {
+//   var x = "i am x";
+//   function InnerFunction() {
+//     console.log("I am Inner function");
+//     console.log(x);
+//   }
+//   return InnerFunction();
+// }
+// OuterFunction();
+// var x = MernStackStudents("js", "reactjs", "nodejs");
+// console.log(x[0]);
+// function MernStackStudents(a1, a2, a3) {
+//   return [a1, a2, a3];
+// }
+
+//  A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an outer function’s scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time.
+
+// function x(){
+//     var username = "shashi"
+//     function y(){
+//         var company = "Qspiders"
+//     }
+// }
+
+// =================function hoisting ===================
+// In JavaScript, Hoisting is the default behavior of moving all the declarations at the top of the scope before code execution. Basically, it gives us an advantage that no matter where functions and variables are declared, they are moved to the top of their scope regardless of whether their scope is global or local
