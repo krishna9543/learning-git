@@ -41,13 +41,11 @@
 // }
 // console.log(addNumber());
 
-function course(a1, a2, a3, a4, a5, a6) {
-  return [arguments];
-}
-console.log(course("JAVA", "Javascript", "NodeJS", "php", "Python"));
-console.log(course("JAVA", "Javascript", "NodeJS", "php", "Python"));
-var args = Array.prototype.slice.call(arguments);
-console.log(args(0, 1));
+// function course(a1, a2, a3, a4, a5, a6) {
+//   return [arguments];
+// }
+// console.log(course("JAVA", "Javascript", "NodeJS", "php", "Python"));
+// console.log(course("JAVA", "Javascript", "NodeJS", "php", "Python"));
 //only available on normal function.
 
 // //arrow function ES6 most used feature
