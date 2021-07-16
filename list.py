@@ -33,7 +33,17 @@ thislist = ["yuvan sankar raja", 7, ("krishna", "varun"), {"krishna", "varun"}]
 # thislist.insert(6, "kathirvelan")
 # print(thislist)
 #! insert a new value at end of the list without remove any of existing values
-#! in this method we add one items at the time 
-thislist.append("cherry")
-print(thislist)
-#! to add more then one 
+#! in this method we add one items at the time
+# thislist.append("cherry")
+# print(thislist)
+#! to add more then one values or merge two list
+thislist1 = ("krishna", "kavin", 3, True)
+# thislist.extend(thislist1)
+# print(thislist)
+#! this method also convert other datatypes(any iterable) into list
+# thislist.extend(thislist1)
+# print(thislist)
+# print(type(thislist))
+#! to concate two list
+# thislist2 = thislist + thislist1
+# print(thislist2)

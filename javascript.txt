@@ -1,0 +1,534 @@
+What is Javascript?
+Javascript is a lightweight , interpreted programming language
+Javascript is a scripting language 
+    scripting language is interpreted at RUNTIME rather than compiled 
+
+Javascript is Single threaded programming language 
+Javascript is ProtoType based language 
+            what is prototype?
+            ProtoType is Style of Object oriented Programming 
+            Javascript is supporting OOPS feature by using PROTOTYPE
+
+Javascript is functional programming language 
+Javascript is Dynamic Typed Language 
+****Javascript can use CLIENT SIDE(Browser) AND SERVER SIDE(server)
+
+Javascript is Synchronous Programming language ('BLOCKING CODE or BLOCK USERS');
+    (ONE request at time)
+
+//?EXECUTE JAVASCRIPT PROGRAM
+1 : USE BROWSER => INSIDE HTML CALL SCRIPT TAG 
+
+2 : USE NODEJS(SERVER) = 
+
+
+JAVASCRIPT HISTORY
+JAVASCRIPT CREATED BY ======   BRENDAN EICH IN THE YEAR 1995 ======= AT NETSCAPE COMPANY
+
+1997 ECMASCRIPT /JAVASCRIPT BOTH ARE SAME 
+
+BROWSER STANDARD VERSION IS ECMA 5.1
+ECMA2015 ADDED SO MANY NEW FEATURE (ES6)
+
+
+FOR CLIENT SIDE JAVASCRIPT => MUST USE BROWSER 
+    1 => CREATE HTML FILE ****
+    2 => ADD SCRIPT TAG IN HTML DOCUMENT ***
+    3 : SCRIPT TAG IS FOR ATTACHING JAVASCRIPT *
+    4 : USE JAVASCRIPT FOR BROWSER 
+
+
+Variables 
+
+Variables are containers that store values.
+    start with var or let  or const keywords to declare a variable in javascript 
+
+  example 
+    //! declare a variable 
+
+    var username = "shashi"; //less recommended
+
+    //!es6 onwards (ecma2015)
+
+    let user = "shashi"; // =>most recommended
+
+    const company = "qspiders";
+
+    !javascript is case sensitive
+
+
+//!VARIABLE NAMING RULES
+ 1 : VARIABLE NAME CANNOT START WITH NUMBER or special characters 
+ var 1name = 'shashi'; //error
+ An identifier or keyword cannot immediately follow a numeric literal.
+
+ 2 : An identifier  or variable name must start with letters , underscore(_) , dollar sign($)
+
+3 : dont use reserved keywords like if , while , function , for , switch
+    if' is not allowed as a variable declaration name
+
+
+
+Javascript Scopes 
+var : the scope of variable defined with the keyword "var" THIS IS GLOBAL SCOPE 
+var : the scope of variable defined with the keyword "var" is limited to the "function" within a function calling FUNCTION SCOPE 
+example 
+    function(){
+        var x = 'shashi'; => localScope or function scope
+    }
+
+
+!?ANY THING OUTSIDE A FUNCTION CALLING GLOBAL SCOPE 
+EXAMPLE 
+var X = 'SHASHI' => GLOBAL SCOPE 
+if(true){
+  var  y = 'manu' => global scope 
+}
+while(){
+    var z = 'shishira' => global scope
+   
+}
+for(var i=0;i<=10;i++){
+    var user = 'raghu' => global scope
+}
+switch(true){
+    var test = 'hello' => global scope
+}
+
+
+
+//!========================LET and  CONST KEY WORDS =====================//
+let : 
+    The scope of variable defined with the keyword "let" or "const" is limited to the "BLOCK" 
+    defined by curly braces {}
+let and const are BLOCKED SCOPED
+
+EXAMPLE 
+    {
+        let x = 'i am x'; //!==== BLOCK SCOPED
+    }
+    {
+        const y = 'i am y with another block'; //!==== BLOCK SCOPED
+    }
+
+
+VAR keyword 
+var variables can be re-declared and updated 
+
+LET keyword 
+let variables value can be  and updated  but cannot be re-declared
+
+CONST keyword 
+const variable only one time declare and assign a value 
+
+const cannot be updated or re-declared 
+
+
+***interview Question ===================VARIABLE HOISTING ============================
+Hoisting is a Javascript mechanism where variables and function declarations are moved to the top of 
+their scope before code execution
+
+syntax for variable hoisting
+problem with var that hoisting
+   console.log(name); //execution
+   var name = "shashi"; //declaration
+
+Hosting is not working LET OR CONST 
+ReferenceError: Cannot access 'variable' before initialization
+
+
+//!========================DATA TYPES ===========================//
+Data types specify what kind of data can be stored and manipulated within a memory allocation
+In javascript two types of data types 
+1 : PRIMITIVE TYPES 
+    PRIMITIVE DATA TYPES ARE DATA IS NOT AN OBJECT THAT HAS NO METHODS 
+    PRIMITIVE DATA TYPES ARE IMMUTABLE(CANNOT BE ALTERED)
+
+    !STRING 
+    !NUMBER 
+    !BOOLEAN 
+    !UNDEFINED 
+    !NULL 
+    !BIGINT
+    !SYMBOL
+
+2 : OBJECT Reference Types (non-PRIMITIVE types) !ALL NON-PRIMITIVE DATA TYPES ARE OBJECTS
+    !OBJECT
+        ARRAY 
+        OBJECT 
+                DATE OBJECT 
+                MATH OBJECT 
+                JSON OBJECT
+        FUNCTIONS 
+
+=======================STRING DATA TYPE ================================
+STRING 
+String is sequence of characters used to represent text 
+PRIMITIVE way can store string value 
+"" => double quotes
+'' => single quote
+`` => backtick //ES6 onwards(template literal)
+
+Template literals (Template strings)
+Template literals are string literals allowing embedded expressions. You can use multi-line strings and string interpolation features with them.
+
+They were called "template strings" in prior editions of the ES2015 specification.
+//?Syntax
+`string text`
+
+`string text line 1
+ string text line 2`
+
+`string text ${expression} string text`
+
+tag`string text ${expression} string text`
+
+
+//? =================number data type ========================//
+var num = 10; //number data type
+var num1 = 10.1; //number data type 
+
+The Number data type in Javascript is PRIMITIVE.
+number data type can hold integer , float , hexadecimal , octal and 
+exponential value.
+
+let x = 10;
+let y = 10.6;
+let z = 0xfff //hex value 
+let a =  2.56e3; //exponential value 
+let b = 030 //octal value 
+ 
+
+? ====================BOOLEAN DATA TYPE ======================//
+BOOLEAN IS ANOTHER JAVASCRIPT PRIMITIVE DATA TYPE.
+BOOLEAN CAN HOLD TWO VALUES true or false 
+it is useful for controlling program flow like if , switch 
+
+
+//?==================UNDEFINED DATA TYPE =========================//
+
+=> undefined is one of the primitive data type in javascript 
+=> undefined is GLOBAL property of global OBJECT like WINDOW in browser global in nodejs
+=> global property means variable in the global SCOPE 
+=> In global scope defined The initial value is UNDEFINED   
+
+//?==========undefined means ========//
+A variable that has not been assigned a value that is undefined
+Declare a variable not assigned a value that is undefined
+
+The undefined property indicates that a variable has not been assigned a value
+
+syntax :=> 
+        var x;
+
+
+BROWSER => WINDOW OBJECT 
+NODEJS => GLOBAL 
+
+
+
+//!=========================null data type =================
+
+null is one of the primitive data type in javascript 
+null represents absence of object value 
+null is not global property of global object 
+
+syntax : 
+    var x = null; //empty value
+
+
+//!===============================SYMBOL ============/
+
+symbol is one of the PRIMITIVE data type in javascript 
+It was introduce in ES6 onwards or ECMA2015 
+
+symbol is used for internal purpose kept private 
+
+symbol value is returning unique value 
+
+symbol is not enumerated 
+
+var x = Symbol(); 
+var y = Symbol();' 
+
+
+//?=============BIGINT data type =====================//
+
+
+
+BIGint is one of the PRIMITIVE data type in javascript 
+It was introduce in ES8 onwards or ECMA2018
+cannot be  converted to a BigInt because it is not an integer
+
+var x = BigInt(10)
+
+
+
+==================FUNCTIONS IN JAVASCRIPT =========================
+
+functions are one of the fundamental building blocks in javascript.
+
+a set of statements that performs a task or calculation of the value.
+
+write once execute many times 
+
+function is Object Reference data type
+
+ ========define functions===============
+ 1 : function declaration or function statement 
+ 2 : function expression or variable declaration function
+ 3 : anonymous function 
+ 4 : Arrow function 
+ 5 : IIFE function 
+
+
+====================function declaration ======================
+
+function declaration or statement consists of "function" keyword 
+followed by 
+=> name of the function
+=> optional parameter within parentheses ()
+=> enclosed with curly braces {} here write statements 
+
+syntax: 
+function Jspiders(){
+    //?=====write function statements
+    var x = "shashi"
+    console.log(x);
+} //called part
+//!building block 
+
+Jspiders(); //calling function execute function
+
+
+=====================ANONYMOUS FUNCTION ==================
+
+Anonymous function is function without having a name 
+***very important function type 
+
+syntax: 
+function(){
+    var x = 'shashi';
+    console.log(x)
+}
+
+=====invoke Anonymous function which needs
+=> function expression (variable declaration ) var x = function(){}
+=>  IIFE
+=> callback function 
+
+
+=================function expression ====================
+function is declaring with help of variable explicitly
+syntax : 
+var x = function(){
+
+}
+
+x();
+
+
+=======================IIFE (Immediately invoked function expression)======
+An Immediately invoked function expression(IIFE) is the one the function 
+to execute function immediately as soon as they created 
+
+IIFEs are very useful because they don’t pollute the global object, and they are a simple way to isolate variables declarations.
+
+Syntax : 
+(function(){
+    console.log('I AM AN IIFE');
+})()
+
+
+
+====================function with default Parameters ===============//
+Default parameter allows named parameters to be initialized with default values otherwise it will return undefined
+
+syntax :
+
+function Courses(x , y=10){
+return x+y
+}
+
+Course(10)
+
+Setting JavaScript default parameters for a function
+In JavaScript, a parameter has a default value of undefined. It means that if you don’t pass the arguments into the function, its parameters will have the default values of undefined.
+
+
+============NORMAL FUNCTION WITH ARGUMENTS OBJECT================
+
+arguments is an Array-like object accessible inside functions that contains the values of the arguments passed to that function.
+
+The arguments object is a local variable available within all non-arrow functions. You can refer to a function's arguments inside that function by using its arguments object. It has entries for each argument the function was called with, with the first entry's index at 0.
+
+syntax : 
+
+function Test(){
+    return arguments; //array like object 
+}
+
+
+=====================REST PARAMETER =====================
+The rest parameter syntax allows a function to accept an indefinite number of arguments as an array
+
+syntax : 
+function Test(...rest){
+    return rest;
+}
+
+console.log(Test('java' , 'js' , 'nodejs' , 'php'));
+
+
+let x = (...rest)=>{
+return rest;
+}
+
+console.log(x('java' , 'js' , 'nodejs' , 'php'));
+
+=========================ARROW FUNCTION EXPRESSION ==========================
+//!ES6 ONWARDS 
+An arrow function is an alternative for traditional function expression.
+Arrow function doesn't support function declaration syntax 
+
+1 : Does not have own "this" binding and super , should not used as a method.
+2 : Does not have arguments object.
+3 : Arrow function is not suitable for "call apply bind" method 
+4 : can not used as constructor 
+5 : dont use new keyword 
+
+syntax 👍
+()=>{
+
+}
+
+
+What is Implicit Return?
+A function is returned values without using the return keyword, it’s called an implicit return.
+
+Implicit vs Explicit Return
+We have several ways of writing our arrow functions. This is because arrow functions can have either "implied return" or "explicit return" keyword.
+
+With normal functions, if you want to return something, you have to use the return keyword. Arrow functions also have that. When you use the return keyword, it's called an explicit return. However, arrow functions up their game and allow something called implied return where the return keyword can be skipped. Let's look at some examples 🤓:
+
+
+
+===========CALLBACK FUNCTION ===============================================
+*********interview most important ============================//
+A callback function is a function  passed into another function as an argument.
+invoked or call them the outer function
+
+let IsJavascriptClass = function(){
+    console.log('guys i am waiting for java class has been completed or not')
+} //wait
+
+let ISJavaClass = function(){
+
+}
+
+
+
+ISJavaClass();
+
+Synchronous JavaScript: As the name suggests synchronous means to be in a sequence, i.e. every statement of the code gets executed one by one. So, basically a statement has to wait for the earlier statement to get executed
+
+ASynchronous in Javascript
+1 : callback function
+2 : promises
+3 : Ajax concepts
+4 :  built-in timer like setTimeOut()
+
+
+JavaScript is a single-threaded programming language which means only one thing can happen at a time. ... That's where asynchronous JavaScript comes into play. Using asynchronous JavaScript (such as callbacks, promises, and async/await), you can perform long network requests without blocking the main thread.
+
+==================CLOSURE IN JAVASCRIPT FUNCTION ================
+//*important for interview ===========//
+
+A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an outer function’s scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time.
+
+function x(){
+    var username = "shashi"
+    function y(){
+        var company = "Qspiders"
+    }
+}
+
+=================function hoisting ===================
+In JavaScript, Hoisting is the default behavior of moving all the declarations at the top of the scope before code execution. Basically, it gives us an advantage that no matter where functions and variables are declared, they are moved to the top of their scope regardless of whether their scope is global or local
+
+
+
+
+==================ARRAYS ==========================
+Array is also one of the javascript object reference data type.
+
+Arrays are used to store multiple values in a single variable
+
+An Array which can hold more than one value at a time
+
+syntax of array 
+1 : Array Literal => []
+2 : Array constructor  => new Array();
+
+
+Array can hold values of different types for an example like string ,boolean , array , object , function , undefined , null ...
+The length of an array is Dynamic sized
+do not specify the array size 
+
+syntax 
+let x = ["shashi" , 10 , undefined , true , {} , [] ]
+
+
+Array.isArray()
+The Array.isArray() method determines whether the passed value is an Array.
+
+Concat() method 
+The concat() method concatenates (joins , merge) two or more arrays.
+
+The concat() method does not change the existing arrays, but returns a new array, containing the values of the joined arrays.
+
+
+//TODO==========//es6 feature =====SPREAD Operator =================//
+
+Spread syntax (...) allows an iterable such as an array expression or string to be expanded in places where zero or more arguments (for function calls) or elements (for array literals) are expected, or an object expression to be expanded in places where zero or more key-value pairs (for object literals) are expected.
+syntax [...] , function(...rest){} , {...obj}
+
+================//higher order function ============================
+
+A Higher order function is a function that takes or accepts a function 
+as an argument, or returns function 
+
+in Array 
+filter 
+map 
+forEach 
+reduce 
+reduceRight 
+find 
+findIndex 
+
+In Javascript, functions can be assigned to variables in the same way that strings or arrays can. They can be passed into other functions as parameters or returned from them as well. A “higher-order function” is a function that accepts functions as parameters and/or returns a function.
+
+
+
+Array helper method forEach 
+A function that accepts up to three arguments. forEach calls the callbackfn function one time for each element in the array.
+return value is undefined 
+not supporting method chaining
+=============================
+
+array MAP method 
+The map() method creates a new array populated with the results of calling a provided function on every element in the calling array.
+
+
+??MAP SUPPORT return value 
+Return value
+A new array with each element being the result of the callback function.
+
+//?supports method chaining
+
+when not use map 
+You shouldn't be using map if:
+
+you're not using the array it returns; and/or
+you're not returning a value from the callback

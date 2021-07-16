@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>array-html</title>
+    <style>
+      #basic,
+      #basic-1,
+      #basic-2,
+      #basic-3,
+      #basic-4,
+      #basic-5 {
+        font-size: larger;
+      }
+    </style>
+    <!-- <script src="./array.js"></script> -->
+  </head>
+  <body>
+    <p id="basic"></p>
+    <p id="basic-1"></p>
+    <p id="basic-2"></p>
+    <p id="basic-3"></p>
+    <p id="basic-4"></p>
+    <p id="basic-5"></p>
+    <p id="basic-6"></p>
+    <p id="basic-7"></p>
+    <p id="basic-8"></p>
+    <script>
+      var cars = ["audi", "BMW", "valvo"];
+      document.getElementById("basic").innerHTML = cars[cars.length - 1];
+      //
+      var cars = ["Saab", "Volvo", "BMW"];
+      document.getElementById("basic-1").innerHTML = cars;
+      //
+      var cars = new Array("Saab", "Volvo", "BMW");
+      cars[2] = "omni";
+      document.getElementById("basic-2").innerHTML = cars;
+      //
+      var person = ["hello", "boy", 46];
+      document.getElementById("basic-3").innerHTML = person.length;
+      //
+      var text, flen, cars, i;
+      var cars = ["audi", "BMW", "valvo", "saab"];
+      flen = cars.length;
+      text = "<ul>";
+      for (i = 0; i < flen; i++) {
+        text += "<li>" + cars[i] + "</li>";
+      }
+      text += "</ul>";
+      document.getElementById("basic-4").innerHTML = text;
+      //
+      var text, cars;
+      var cars = ["audi", "BMW", "valvo", "saab"];
+      text = "<ul>";
+      cars.forEach(myFunction);
+      text += "</ul>";
+      function myFunction(value) {
+        text += "<li>" + value + "</li>";
+      }
+      document.getElementById("basic-5").innerHTML = text;
+      //
+      var cars = ["Saab", "Volvo", "BMW"];
+      cars[3] = "hello";
+      document.getElementById("basic-6").innerHTML = cars;
+      //
+      var cars = ["Saab", "Volvo", "BMW"];
+      cars.pop(0);
+      document.getElementById("basic-7").innerHTML = cars;
+      //  var x = Array.isArray(cars);
+      var x = cars instanceof Array;
+      document.getElementById("basic-8").innerHTML = x;
+    </script>
+  </body>
+</html>

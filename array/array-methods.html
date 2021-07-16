@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array-methods</title>
+</head>
+<body>
+    <p id="basic"></p>
+    <p id="basic-1"></p>
+    <p id="basic-2"></p>
+    <p id="basic-3"></p>
+    <p id="basic-4"></p>
+    <p id="basic-5"></p>
+    <p id="basic-6"></p>
+    <p id="basic-7"></p>
+    <p id="basic-8"></p>
+    <script>
+     var cars = ["audi", "BMW", "valvo", "saab"];
+     var x = cars.toString();
+     document.getElementById("basic").innerHTML = x ;
+     //join
+     var cars = ["audi", "BMW", "valvo", "saab"];
+     var x = cars.join("&");
+     document.getElementById("basic-1").innerHTML = x ;
+     //pop
+     var cars = ["audi", "BMW", "valvo", "saab"];
+     var x = cars.pop();
+     document.getElementById("basic-2").innerHTML = x ; 
+    //var cars = ["audi", "BMW", "valvo", "saab"];cars.pop();   document.getElementById("basic-2").innerHTML = cars ;
+        //
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+console.log(fruits);
+fruits.splice(2, 0, "Lemon", "Kiwi");
+ console.log(fruits);
+
+    </script>
+</body>
+</html>

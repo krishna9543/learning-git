@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array Sort</h2>
+
+<p>The lowest number is <span id="demo"></span>.</p>
+
+<script>
+var points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return a-b});
+var p = points.length;
+if( p%2 == 0)
+{	
+    var x = points[3] + points[4];
+	var y =x/2;
+    document.getElementById("demo").innerHTML = y;
+}
+else 
+{  var z = Math.ceil(p/2);
+   document.getElementById("demo").innerHTML = points[z];
+}
+</script>
+
+</body>
+</html>
+

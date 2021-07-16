@@ -130,11 +130,66 @@ let languages = ["Java", "nodeJS", "js", "ruby", "php", "python"];
 // for (let i = 0; i <= langArray.length - 1; i++) {
 //   console.log(langArray[i]);
 // }
-let x = ["Java", "nodeJS", "js"];
-let y = ["ruby", "php", "python"];
-let z = x.concat(y);
-console.log(z);
-function lang(...rest) {
-  return rest;
-}
-console.log(lang("Java", "nodeJS", "js", "ruby", "php", "python"));
+// let x = ["Java", "nodeJS", "js"];
+// let y = ["ruby", "php", "python"];
+// let z = x.concat(y);
+// console.log(z);
+// function lang(...rest) {
+//   return rest;
+// }
+// console.log(lang("Java", "nodeJS", "js", "ruby", "php", "python"));
+//! higher order function
+// function add(a, b){
+// return a + b;
+// }
+// function mult(a, b){
+// return a * b;
+// }
+// function div(mult(5 ,7), add(5 , 7)){
+// return a / b;
+// }
+//? loop over an array
+//array helper method - forEach
+// Array.prototype.forEach(); //looping
+//forEach is an array helper method executes a provided func once in each element an array
+
+//forEach only works on array
+// languages.forEach((value, index, array) => console.log(value));
+// let frontEnd = ["HTML", "CSS", "javascript", "angular", "reactJS", "vueJs"];
+// let backEnd = ["javascript", "nodeJs", "expressJs", "nextJs", "web servies"];
+// let dataBase = ["mongodb", "mongoose", "mySQL", "postgreSQL", "plSQL"];
+
+// let fullStack = [...frontEnd, ...backEnd, ...dataBase].forEach(function (
+//   value,
+//   index,
+//   array
+// ) {
+//   console.log(value);
+// });
+// console.log(fullStack);
+// let lang = languages.forEach(element => console.log(element));
+// console.log(lang);
+//Array.prototype.map();
+// Calls a defined callback function on each element of an array, and returns an array that contains the results.
+// let lang = languages.map((element) => element);
+// console.log(lang);
+
+let ages = [10, 20, 30, 40, 50, 60, 70, 80];
+// let below50 = ages.forEach((element) => {
+//   if (element <= 50) {
+//     // return element;
+//     console.log(element);
+//   }
+// });
+// let below50 = ages.map((element) => {
+//   if (element <= 50) {
+//     return element;
+//     // console.log(element);
+//   }
+// });
+// console.log(below50);
+// let str = "krishna";
+// let array = str.split("");
+// console.log(array);
+// let stri = array.map((x) => x).tostring();
+// console.log(stri);
