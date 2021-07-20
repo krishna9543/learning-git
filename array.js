@@ -193,3 +193,64 @@ let ages = [10, 20, 30, 40, 50, 60, 70, 80];
 // console.log(array);
 // let stri = array.map((x) => x).tostring();
 // console.log(stri);
+
+let str = "krishna";
+//! array static mathod Array.from
+// ? Array.from mathod creates new shallow-copied array instance from array like object or iterable objects.
+// Creates an array from an iterable object.
+// let x = Array.from();
+// console.log(x);
+// let split = str.split("");
+// let spread = [...str];
+// let from = Array.from(str);
+// console.log(split, spread, from);
+
+// function jspiders() {
+//   return arguments;
+// }
+// let courses = jspiders("Java", "nodeJS", "js", "ruby", "php", "python");
+// console.log(courses);
+// console.log(typeof courses);
+// console.log(Array.isArray(courses));
+// console.log("=========gap=========");
+// let xyz = Array.from(courses);
+// console.log(xyz);
+// console.log(typeof xyz);
+// console.log(Array.isArray(xyz));
+// console.log("=========gap=========");
+// let xyz = [...courses];
+// console.log(xyz);
+// console.log(typeof xyz);
+// console.log(Array.isArray(xyz));
+
+// let xyz = [
+//   "Java",
+//   "nodeJS",
+//   "js",
+//   "ruby",
+//   "php",
+//   "python",
+//   "Java",
+//   "nodeJS",
+//   "js",
+//   "ruby",
+//   "php",
+//   "python",
+// ];
+// console.log(xyz);
+// console.log(typeof xyz);
+// console.log(Array.isArray(xyz));
+// console.log(xyz.length);
+// console.log("==========gap==========");
+// let x = new Set(xyz);
+// console.log(x);
+// console.log(typeof x);
+// console.log(Array.isArray(x));
+// console.log(x.length);
+// console.log("==========gap==========");
+// ! set convert into array
+// let y = Array.from(x);
+// console.log(y);
+// console.log(typeof y);
+// console.log(Array.isArray(y));
+// console.log(y.length);

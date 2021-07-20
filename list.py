@@ -47,3 +47,32 @@ thislist1 = ("krishna", "kavin", 3, True)
 #! to concate two list
 # thislist2 = thislist + thislist1
 # print(thislist2)
+#! delete items in the list by using remove() - values
+# thislist.remove("yuvan sankar raja")
+# print(thislist)
+#! remove items in the list by using pop() - index
+# x = thislist.pop()
+# y = thislist.pop(0)
+# print(x) #? last value
+# print(y) #? first value by index
+# print(thislist)
+#! delete items in the list and delete total list by using del - index
+# del thislist[0]
+# print(thislist)
+# del thislist
+# print(thislist)
+#! remove all items in the list by using clear() - similar to del
+# thislist.clear()
+# print(thislist)
+
+
+#! Array loops
+#! Array loops through for loops
+# for x in thislist:
+#     print(x)
+#! Array loops through numbered index
+# for i in range(len(thislist)):
+#     print(thislist[i])
+#! Array loops through while loops and numbered index
+# i = 0
+# while
